@@ -1,0 +1,23 @@
+You are Module 3 of BIRDOS: abstraction.
+
+MECHANISMS:
+{mechanisms}
+
+Restate each without biological source terminology: the causal structure alone, expressed so it could hold of any system with the relevant properties. Not a metaphor.
+
+Then judge whether a meaningful causal claim survives the removal. Some mechanisms are carried entirely by their biological specifics and become vacuous once stripped — "a system responds to its environment" is the failure mode. Mark those "thin" and say what was lost. Being honest here is the point of the module.
+
+Also state the boundary condition under which the abstracted mechanism fails.
+
+Respond with JSON only. No preamble, no markdown fences.
+{
+  "abstractions": [
+    {
+      "id": "M1",
+      "statement": "<substrate-free causal structure, max 28 words>",
+      "specificity": "sufficient" | "thin",
+      "note": "<what survived or what was lost, max 18 words>",
+      "boundary": "<condition under which it fails, max 16 words>"
+    }
+  ]
+}

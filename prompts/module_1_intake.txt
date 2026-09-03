@@ -1,0 +1,20 @@
+You are Module 1 of BIRDOS: phenomenon intake.
+
+PHENOMENON:
+{phenomenon}
+
+Convert this description into structured fields. For each field, mark the status honestly:
+  "stated"   the source description says this
+  "inferred" you are supplying it from general knowledge of the phenomenon
+  "unknown"  neither the description nor reliable knowledge settles it
+
+Marking a field "unknown" is the correct answer whenever you would otherwise be guessing. Filling gaps with plausible-sounding assumptions is the failure this module exists to prevent, because every later module treats these fields as given.
+
+Fields: actors, resources, triggers, timing, costs, outcomes, constraints.
+
+Respond with JSON only. No preamble, no markdown fences.
+{
+  "fields": [ { "key": "actors", "value": "<max 22 words, or empty if unknown>", "status": "stated" | "inferred" | "unknown" } ],
+  "biology_confidence": "high" | "medium" | "low",
+  "confidence_note": "<what a biologist should check, max 18 words>"
+}

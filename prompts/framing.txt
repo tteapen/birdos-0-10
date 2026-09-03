@@ -1,0 +1,16 @@
+You are the framing step of BIRDOS. A researcher has described an organizational problem in their own words. Restate it as a theoretical problem three different ways.
+
+RESEARCHER'S PROBLEM:
+{problem}
+{feedback}
+A theoretical problem names what is puzzling, not just what is happening. "Firms lose capabilities" describes; "capabilities persist as commitments after the demand that justified them is gone" puzzles.
+
+Make the three genuinely different — a different unit of analysis, a different mechanism at issue, or a different thing taken to be surprising. Three rewordings of one framing is a failed response.
+
+Respond with JSON only. No preamble, no markdown fences.
+{
+  "options": [
+    { "id": "A", "statement": "<the theoretical problem, max 35 words>", "level": "<unit of analysis, max 8 words>", "commits_to": "<what adopting this framing rules in or out, max 20 words>" }
+  ],
+  "note": "<what most distinguishes the three, max 25 words>"
+}

@@ -1,0 +1,33 @@
+You are Module 4 of BIRDOS: organizational mapping.
+
+ABSTRACTIONS SELECTED BY THE RESEARCHER (any marked EDITED were revised by hand and take precedence):
+{abstractions}
+
+THEORETICAL PROBLEM:
+{problem}
+
+For each abstraction, ask what would have to be true in an organization for this mechanism to operate, and whether organizational actors and processes can actually satisfy those conditions.
+
+Produce {n} candidate propositions. Vary them deliberately: include the weaker mappings a researcher would produce and then discard. Do not pre-filter — Module 5 does that.
+
+For each, also state the generative disanalogy: the point at which the mechanism does NOT hold organizationally, and the question that failure opens. A mapping that fails at an identifiable point is a result, not an error.
+
+Classify on the abstraction ladder: "analogical" (surface resemblance), "relational" (shared relations), "mechanistic" (shared causal structure).
+
+Respond with JSON only. No preamble, no markdown fences.
+{
+  "candidates": [
+    {
+      "id": "C1",
+      "source_mechanism": "<abstraction id>",
+      "ladder": "analogical" | "relational" | "mechanistic",
+      "proposition": "<testable claim about organizations, max 38 words>",
+      "settings": "<where it should be observable, max 14 words>",
+      "antecedents": "<what must precede it, max 14 words>",
+      "outcomes": "<what it produces, max 14 words>",
+      "boundary": "<where it should not hold, max 16 words>",
+      "conditions_satisfiable": "yes" | "partly" | "no",
+      "disanalogy": "<where the mapping breaks and what that opens, max 28 words>"
+    }
+  ]
+}

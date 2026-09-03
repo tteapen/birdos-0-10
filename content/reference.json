@@ -1,0 +1,65 @@
+{
+ "examples": [
+  "How can organizations adjust to a changed environment without making changes they cannot undo?",
+  "How can organizations preserve capabilities they must keep dormant until they are needed?",
+  "How can firms design offerings that become more valuable as they evolve over time?",
+  "How can organizations evaluate ideas when generating them becomes virtually costless?"
+ ],
+ "filters": [
+  {
+   "key": "abstraction",
+   "label": "abstraction",
+   "test": "Is the mapping mechanistic rather than merely verbal?"
+  },
+  {
+   "key": "feasibility",
+   "label": "feasibility",
+   "test": "Could an organizational researcher observe these constructs?"
+  },
+  {
+   "key": "novelty",
+   "label": "novelty",
+   "test": "Does this depart from what the literature already claims?"
+  },
+  {
+   "key": "falsifiability",
+   "label": "falsifiability",
+   "test": "Is there an observation that would count against it?"
+  },
+  {
+   "key": "usefulness",
+   "label": "usefulness",
+   "test": "Would knowing the answer change how scholars theorize?"
+  }
+ ],
+ "intake_fields": [
+  [
+   "actors",
+   "who or what acts"
+  ],
+  [
+   "resources",
+   "what is consumed or exchanged"
+  ],
+  [
+   "triggers",
+   "what sets the process off"
+  ],
+  [
+   "timing",
+   "over what period, in what sequence"
+  ],
+  [
+   "costs",
+   "what the process costs the system"
+  ],
+  [
+   "outcomes",
+   "what it produces"
+  ],
+  [
+   "constraints",
+   "what limits or bounds it"
+  ]
+ ]
+}

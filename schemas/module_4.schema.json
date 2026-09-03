@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "candidates"
+  ],
+  "properties": {
+    "candidates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "required": [
+          "id",
+          "ladder",
+          "proposition"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "source_mechanism": {
+            "type": "string"
+          },
+          "ladder": {
+            "enum": [
+              "analogical",
+              "relational",
+              "mechanistic"
+            ]
+          },
+          "proposition": {
+            "type": "string"
+          },
+          "settings": {
+            "type": "string"
+          },
+          "antecedents": {
+            "type": "string"
+          },
+          "outcomes": {
+            "type": "string"
+          },
+          "boundary": {
+            "type": "string"
+          },
+          "conditions_satisfiable": {
+            "enum": [
+              "yes",
+              "partly",
+              "no"
+            ]
+          },
+          "disanalogy": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

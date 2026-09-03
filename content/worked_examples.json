@@ -1,0 +1,898 @@
+[
+ {
+  "n": 1,
+  "title": "Adjusting without committing",
+  "question": "How can organizations adjust to a changed environment without making changes they cannot undo?",
+  "reading": "Scenario planning treats flexibility as an option to be exercised. The harder difficulty is that most adjustments large enough to matter also alter the structure that produced them, so the adjustment cannot be withdrawn when conditions move again.",
+  "signature": "A system alters what it does in response to a changed environment while leaving the structure that generates its behaviour unchanged, so the alteration can be withdrawn if conditions revert.",
+  "signatureNote": "The working clause is that the generating structure is left unchanged. It separates reversible adjustment from change that consumes the capacity to reverse, and it can be false, because many systems cannot alter output without altering the structure behind it.",
+  "candidates": [
+   [
+    104,
+    "Octopus RNA editing",
+    "Proteins are adapted to conditions by rewriting transcripts, leaving the genome untouched",
+    "rare",
+    "chosen"
+   ],
+   [
+    60,
+    "Heterophylly",
+    "One plant grows structurally different leaves above and below water on the same stem",
+    "rare",
+    ""
+   ],
+   [
+    100,
+    "Coral symbiont shuffling",
+    "Stressed corals expel their algae and recruit more heat-tolerant strains instead",
+    "moderate",
+    ""
+   ],
+   [
+    236,
+    "Canalization",
+    "Development produces the same outcome across a wide range of perturbations",
+    "moderate",
+    ""
+   ],
+   [
+    213,
+    "Punctuated equilibrium",
+    "Long stasis interrupted by geologically rapid change",
+    "heavy",
+    "set aside"
+   ]
+  ],
+  "chosenWhy": "RNA editing is the only candidate in which the adjustment is made downstream of the stored instructions, so the instructions survive it intact. Heterophylly commits each leaf once it is grown. Coral shuffling replaces the partner rather than modifying it. Canalization suppresses response rather than producing one. Punctuated equilibrium describes the pattern the question is about and supplies no mechanism, which is why it was set aside at retrieval.",
+  "intake": [
+   [
+    "actors",
+    "Neural and other cells; enzymes that edit RNA transcripts before translation",
+    "stated"
+   ],
+   [
+    "resources",
+    "Editing enzyme capacity; the pool of transcripts available for modification",
+    "inferred"
+   ],
+   [
+    "triggers",
+    "Change in ambient conditions, temperature in the best documented cases",
+    "stated"
+   ],
+   [
+    "timing",
+    "Editing acts within the life of a transcript; the genome is not altered",
+    "stated"
+   ],
+   [
+    "costs",
+    "Editing is metabolically costly and slows protein production",
+    "inferred"
+   ],
+   [
+    "outcomes",
+    "Protein function shifts to suit conditions while the stored sequence persists",
+    "stated"
+   ],
+   [
+    "constraints",
+    "Whether editing can be sustained indefinitely, and which proteins are ineligible",
+    "unknown"
+   ]
+  ],
+  "unknownNote": "Whether the adjustment can be held indefinitely decides whether the organizational version describes a durable capability or a temporary buffer. It is unknown here, so nothing downstream should assume the adjusted state can be maintained without limit.",
+  "mechanisms": [
+   [
+    "M1",
+    "Instructions are copied and the copy is modified before use, so the stored original is never altered",
+    "carried"
+   ],
+   [
+    "M2",
+    "Modification is made at the point of use and decays with the copy, so reverting requires only that editing stop",
+    "carried"
+   ],
+   [
+    "M3",
+    "Proteins are changed to suit conditions",
+    "near-duplicate of M1"
+   ]
+  ],
+  "abstractions": [
+   [
+    "M1",
+    "A system that modifies working copies rather than stored instructions can change what it does while retaining the ability to resume what it did before",
+    "sufficient",
+    "The retained original is what makes reversal possible, and its retention can fail"
+   ],
+   [
+    "M2",
+    "Reversal is achieved by ceasing the modification rather than by performing a second change, so the cost of reverting sits in maintaining the adjustment",
+    "sufficient",
+    "Relocates the cost, which is a claim that could be wrong"
+   ],
+   [
+    "M3",
+    "A system adjusts its behaviour to its environment",
+    "thin",
+    "True of almost any system once the biology is removed"
+   ]
+  ],
+  "mapping": [
+   [
+    "Settings",
+    "Firms facing demand shifts, regulatory change, or supply disruption of uncertain duration"
+   ],
+   [
+    "Antecedents",
+    "The original configuration is retained and remains executable; adjustment is made in a separate layer; reverting requires only that the adjustment stop"
+   ],
+   [
+    "Outcomes",
+    "The firm operates in a changed mode while retaining the ability to resume the prior mode at low cost"
+   ],
+   [
+    "Boundary",
+    "Fails where operating in the adjusted mode degrades the retained original, or where the people who could run it leave"
+   ],
+   [
+    "Satisfiable",
+    "Partly, because firms can run temporary structures, but a retained configuration decays while it is unused"
+   ]
+  ],
+  "props": [
+   [
+    "C1",
+    "mechanistic",
+    "Organizations that respond to environmental change by modifying execution while leaving the generating structures intact will resume the prior mode at lower cost than those that alter the structures, and the difference will widen with the duration of the change."
+   ],
+   [
+    "C2",
+    "mechanistic",
+    "Because reversal requires only that the adjustment cease, the cost of reverting sits in maintaining the adjustment rather than in undoing it, so firms will systematically underestimate the cost of temporary measures that persist."
+   ],
+   [
+    "C3",
+    "relational",
+    "Organizations should retain flexibility when facing uncertain environments."
+   ],
+   [
+    "C4",
+    "mechanistic",
+    "Firms that maintain a parallel unmodified configuration will outperform those that do not when the environment reverts."
+   ]
+  ],
+  "verdicts": [
+   [
+    "C1",
+    "pass",
+    null,
+    "Distinguishes two response architectures and predicts a widening difference, observable across a shift of known duration",
+    [
+     5,
+     4,
+     4,
+     4,
+     4
+    ]
+   ],
+   [
+    "C2",
+    "pass",
+    null,
+    "Relocates the cost of reversal, which contradicts how temporary measures are ordinarily budgeted and could be shown false",
+    [
+     5,
+     3,
+     5,
+     5,
+     5
+    ]
+   ],
+   [
+    "C3",
+    "reject",
+    "novelty",
+    "Restates the premise of the flexibility and real options literature with no mechanism attached",
+    [
+     2,
+     4,
+     1,
+     null,
+     null
+    ]
+   ],
+   [
+    "C4",
+    "reject",
+    "feasibility",
+    "Plausible and mechanistic, but a parallel unmodified configuration is not separable in the records a researcher could obtain",
+    [
+     4,
+     1,
+     null,
+     null,
+     null
+    ]
+   ]
+  ],
+  "survivor": "C2",
+  "falsification": "Follow firms through a demand shift that later reverses. Measure the cost of resuming the prior mode against two quantities: the scale of the adjustment made, and the expenditure on maintaining it. If resumption cost tracks the scale of the adjustment rather than its maintenance expenditure, the proposition fails.",
+  "design": "Firms observed across a reversing shift, with separable records of adjustment expenditure and resumption cost",
+  "disanalogy": "A cephalopod's genome is inert while its transcripts are edited, so the stored original does not degrade during the adjustment. An organization's retained configuration is run by people, and people move, retrain and forget while the adjusted mode is in operation. The original decays because it is not being used, which the biological case excludes. The mechanism therefore predicts a reversibility organizations may not have, and the disanalogy names what a firm would need: a retained configuration that is maintained rather than merely preserved.",
+  "verify": "Whether RNA editing is reversible in practice, and whether editing rates can be sustained without cost to the organism"
+ },
+ {
+  "n": 2,
+  "title": "Preserving a capability you cannot inspect",
+  "question": "How can organizations preserve capabilities they must keep dormant until they are needed?",
+  "reading": "The difficulty is not storage. It is that the firm cannot see the condition of what it is preserving, and the only way to check uses part of it up. This is a measurement problem wearing a capability problem's clothes.",
+  "signature": "A system holds a reserve whose condition cannot be observed without using it, and using it consumes part of what is being checked.",
+  "signatureNote": "Stated this way the problem contains a contradiction that has to be resolved, rather than a situation to be described. That is what gives the later steps something to work on.",
+  "candidates": [
+   [
+    40,
+    "Persistent soil seed banks",
+    "Seeds germinate in staggered cohorts rather than all at once",
+    "rare",
+    "chosen"
+   ],
+   [
+    162,
+    "Hibernation and torpor",
+    "Metabolism drops for months, punctuated by costly arousals",
+    "moderate",
+    ""
+   ],
+   [
+    3,
+    "Persister cells",
+    "A dormant subpopulation survives by doing nothing rather than by resisting",
+    "rare",
+    ""
+   ],
+   [
+    114,
+    "Tardigrade cryptobiosis",
+    "Metabolism suspended entirely, revived after years",
+    "moderate",
+    ""
+   ],
+   [
+    20,
+    "Endosymbiosis",
+    "A retained partner sheds most of its genome and never recovers it",
+    "heavy",
+    "set aside"
+   ]
+  ],
+  "chosenWhy": "The others preserve and resume. Only the seed bank tests itself: a fraction germinates each year regardless of conditions, spending part of the reserve to learn about the rest. That is the trade the question says cannot be avoided.",
+  "intake": [
+   [
+    "actors",
+    "Individual seeds within a population; the soil environment",
+    "stated"
+   ],
+   [
+    "resources",
+    "Stored energy per seed; the finite total number of seeds",
+    "inferred"
+   ],
+   [
+    "triggers",
+    "Cohort-specific dormancy depth meeting seasonal cues",
+    "stated"
+   ],
+   [
+    "timing",
+    "Decades of viability; a fraction germinating each year",
+    "stated"
+   ],
+   [
+    "costs",
+    "Seeds that germinate in a bad year are lost entirely",
+    "stated"
+   ],
+   [
+    "outcomes",
+    "The population survives unfavourable periods and recovers",
+    "stated"
+   ],
+   [
+    "constraints",
+    "Whether decay is uniform across the bank or concentrated in some cohorts",
+    "unknown"
+   ]
+  ],
+  "unknownNote": "That unknown carries the whole organizational argument. If decay is uneven, a sampled test tells you about the sample only — which is exactly the boundary condition that surfaces two modules later.",
+  "mechanisms": [
+   [
+    "M1",
+    "A fixed fraction is enacted each period regardless of conditions, revealing its condition at a cost bounded by that fraction",
+    "carried"
+   ],
+   [
+    "M2",
+    "Dormancy depth varies across the reserve, so enactment staggers itself with no scheduling decision",
+    "carried"
+   ],
+   [
+    "M3",
+    "Some seeds germinate each year",
+    "near-duplicate of M1"
+   ]
+  ],
+  "abstractions": [
+   [
+    "M1",
+    "The condition of an unobservable reserve can be established by enacting a bounded subset, at the cost of consuming it, provided the subset represents the whole",
+    "sufficient",
+    "The proviso is the load-bearing clause, and it can fail"
+   ],
+   [
+    "M2",
+    "Heterogeneous readiness produces staggered enactment without a scheduler",
+    "sufficient",
+    "Explains how sampling happens with nobody sampling"
+   ],
+   [
+    "M3",
+    "A distributed reserve can be assessed without central aggregation",
+    "thin",
+    "Once the biology goes, this is distributed systems in general"
+   ]
+  ],
+  "mapping": [
+   [
+    "Settings",
+    "Emergency response, mothballed production lines, surge staffing, disaster recovery"
+   ],
+   [
+    "Antecedents",
+    "A reserve divisible into comparable units; capacity to enact a subset; decay that is even across units"
+   ],
+   [
+    "Outcomes",
+    "Preservation verified at bounded cost; investment aimed at observed rather than assumed decay"
+   ],
+   [
+    "Boundary",
+    "Fails where capability sits in specific individuals or undocumented routines"
+   ],
+   [
+    "Satisfiable",
+    "Partly — drills sample the reserve, but capability is rarely made of interchangeable units"
+   ]
+  ],
+  "props": [
+   [
+    "C1",
+    "mechanistic",
+    "A dormant capability can be verified at bounded cost by enacting a randomly chosen subset, and that test loses informativeness as decay across components becomes more uneven."
+   ],
+   [
+    "C2",
+    "mechanistic",
+    "Where capability is concentrated in particular people rather than spread across interchangeable units, partial enactment will systematically overestimate preservation, because the components easiest to exercise are the ones most likely to be intact."
+   ],
+   [
+    "C3",
+    "relational",
+    "Organizations should periodically exercise capabilities they are not using."
+   ],
+   [
+    "C4",
+    "mechanistic",
+    "The optimal fraction to enact each period rises with the rate at which the capability decays."
+   ]
+  ],
+  "verdicts": [
+   [
+    "C1",
+    "pass",
+    null,
+    "The condition on decay heterogeneity is specific and could be shown false; both terms are visible in drill records",
+    [
+     5,
+     4,
+     4,
+     5,
+     4
+    ]
+   ],
+   [
+    "C2",
+    "pass",
+    null,
+    "Predicts a directional bias rather than a difficulty, and names what produces it",
+    [
+     5,
+     3,
+     5,
+     5,
+     5
+    ]
+   ],
+   [
+    "C3",
+    "reject",
+    "novelty",
+    "Standard practice and standard advice, with no mechanism attached",
+    [
+     2,
+     4,
+     1,
+     null,
+     null
+    ]
+   ],
+   [
+    "C4",
+    "reject",
+    "falsifiability",
+    "Optimality asserted with no criterion, so nothing could count against it. Would pass with an explicit objective",
+    [
+     4,
+     3,
+     3,
+     1,
+     null
+    ]
+   ]
+  ],
+  "survivor": "C2",
+  "falsification": "Compare drill results with full activation in organizations where both have happened. If partial enactment matches or understates full-activation performance rather than overstating it, the predicted bias is absent.",
+  "design": "Paired drill and real-activation records from the same organization, on a common performance measure",
+  "disanalogy": "Seeds are interchangeable, so a sampled seed genuinely stands for the bank. Organizational capability sits in particular people and undocumented routines, so the sample is not representative and is biased toward whatever is easiest to exercise. The mechanism does not transfer — and that failure is the more useful result, turning a general recommendation to run drills into a specific warning about which capabilities drills cannot verify.",
+  "verify": "Whether germination fraction is genuinely condition-independent, and whether viability decays evenly across a seed bank"
+ },
+ {
+  "n": 3,
+  "title": "Offerings that improve with use",
+  "question": "How can firms design offerings that become more valuable as they evolve over time?",
+  "reading": "Almost everything depreciates. Asking for the opposite means the answer has to say what accumulates and, more importantly, where the accumulation is physically stored.",
+  "signature": "Use alters the structure of a system, and the altered structure performs better than the original, so history is stored as capacity rather than as wear.",
+  "signatureNote": "The working clause is 'stored as capacity rather than wear'. It insists the value accumulate somewhere, which rules out answers appealing only to reputation, habit or brand.",
+  "candidates": [
+   [
+    33,
+    "Fungal hyphal foraging memory",
+    "Networks thicken productive branches and abandon others, encoding history in their shape",
+    "rare",
+    "chosen"
+   ],
+   [
+    232,
+    "Subfunctionalization",
+    "Duplicate genes each lose part of the ancestral function, so both become necessary",
+    "rare",
+    ""
+   ],
+   [
+    200,
+    "Niche construction",
+    "Organisms modify the selection pressures acting on their own descendants",
+    "moderate",
+    ""
+   ],
+   [
+    214,
+    "Exaptation",
+    "A structure evolved for one purpose is later co-opted for another",
+    "heavy",
+    ""
+   ],
+   [
+    240,
+    "Modularity and evolvability",
+    "Modular architectures allow change in one part without breaking others",
+    "heavy",
+    "set aside"
+   ]
+  ],
+  "chosenWhy": "Exaptation and modularity are already common currency in innovation research, so a reader would complete either from memory without the mechanism ever being stated. The fungal network is the one that says where the accumulated value physically sits: in the thickness of the paths that were used.",
+  "intake": [
+   [
+    "actors",
+    "Hyphal branches; nutrient sources at the network's edge",
+    "stated"
+   ],
+   [
+    "resources",
+    "Biomass allocated to maintaining tubes",
+    "inferred"
+   ],
+   [
+    "triggers",
+    "Flow of nutrients through a particular branch",
+    "stated"
+   ],
+   [
+    "timing",
+    "Reinforcement and withdrawal over days to weeks",
+    "inferred"
+   ],
+   [
+    "costs",
+    "Upkeep of every tube maintained; loss of any branch dismantled",
+    "stated"
+   ],
+   [
+    "outcomes",
+    "Network shape converges on the routes that have paid",
+    "stated"
+   ],
+   [
+    "constraints",
+    "Whether an abandoned route can be regrown, and how fast reinforcement decays without flow",
+    "unknown"
+   ]
+  ],
+  "unknownNote": "Whether abandoned routes can be regrown decides whether the organizational version describes an advantage or a trap. It is unknown here, so nothing downstream should assume reversibility.",
+  "mechanisms": [
+   [
+    "M1",
+    "Flow through a branch reinforces that branch, so the structure comes to record which routes have paid",
+    "carried"
+   ],
+   [
+    "M2",
+    "Material from unused branches is withdrawn and reinvested in used ones, so improvement funds itself",
+    "carried"
+   ],
+   [
+    "M3",
+    "Productive branches get bigger",
+    "near-duplicate of M1"
+   ]
+  ],
+  "abstractions": [
+   [
+    "M1",
+    "A system that thickens the paths it uses and dismantles those it does not stores its history as capacity, so performance improves with use while the environment that generated that history holds",
+    "sufficient",
+    "The trailing condition is what makes it testable"
+   ],
+   [
+    "M2",
+    "Reinforcement funded by withdrawal from unused parts makes improvement self-financing and, in the same act, irreversible",
+    "sufficient",
+    "Couples two properties usually treated separately"
+   ],
+   [
+    "M3",
+    "The structure is its own memory; no central representation exists",
+    "thin",
+    "A generic claim about distributed systems once the biology is removed"
+   ]
+  ],
+  "mapping": [
+   [
+    "Settings",
+    "Platform offerings, product lines and services whose use reshapes the artifact itself"
+   ],
+   [
+    "Antecedents",
+    "Usage alters the offering rather than only a record of it; unused parts can be withdrawn; what is recovered funds reinforcement"
+   ],
+   [
+    "Outcomes",
+    "The offering improves along used paths; value accrues to long-tenured users"
+   ],
+   [
+    "Boundary",
+    "Fails when demand moves to a path that was already dismantled"
+   ],
+   [
+    "Satisfiable",
+    "Partly — firms can retire features, but what retirement recovers is not what it costs"
+   ]
+  ],
+  "props": [
+   [
+    "C1",
+    "mechanistic",
+    "Offerings whose use directly reshapes the artifact will appreciate for long-tenured users and depreciate for new ones, because accumulated structure fits the historical usage pattern rather than the current one."
+   ],
+   [
+    "C2",
+    "mechanistic",
+    "Because reinforcement is funded by withdrawing unused parts, an offering's rate of improvement and its fragility to demand shifts rise together and cannot be managed separately."
+   ],
+   [
+    "C3",
+    "relational",
+    "Products that learn from their users get better over time."
+   ],
+   [
+    "C4",
+    "analogical",
+    "Offerings should be grown organically, like a network."
+   ]
+  ],
+  "verdicts": [
+   [
+    "C1",
+    "pass",
+    null,
+    "Predicts opposite effects for two identifiable user groups from one mechanism, observable in retention data",
+    [
+     5,
+     4,
+     4,
+     4,
+     4
+    ]
+   ],
+   [
+    "C2",
+    "pass",
+    null,
+    "Ties improvement rate to fragility and says they cannot be separated, which a counterexample would refute",
+    [
+     5,
+     3,
+     5,
+     5,
+     5
+    ]
+   ],
+   [
+    "C3",
+    "reject",
+    "novelty",
+    "The premise of the learning-product literature restated, with no mechanism and nothing to argue with",
+    [
+     3,
+     4,
+     1,
+     null,
+     null
+    ]
+   ],
+   [
+    "C4",
+    "reject",
+    "abstraction",
+    "'Organically' is doing all the work. No causal structure named, and nothing would count against it",
+    [
+     1,
+     null,
+     null,
+     null,
+     null
+    ]
+   ]
+  ],
+  "survivor": "C2",
+  "falsification": "Compare offerings that fund improvement by retiring unused features with those funding it from new investment. If the first group is no more exposed to demand shifts than the second, the coupling the proposition claims does not exist.",
+  "design": "Feature release and retirement histories across comparable products, plus performance after an observable demand shift",
+  "disanalogy": "A fungal network dismantles a branch and recovers the material. A firm that retires a feature recovers development capacity but not the customers who depended on it. What is recovered and what is lost are different kinds of resource, which is precisely why an organization can improve and lose ground in the same move — a possibility the biological case does not contain.",
+  "verify": "Whether abandoned hyphal branches can be regrown, and how quickly reinforcement decays without flow"
+ },
+ {
+  "n": 4,
+  "title": "Evaluating ideas when generating them is free",
+  "question": "How can organizations evaluate ideas when generating them becomes virtually costless?",
+  "reading": "Theories of recombinant search assume variation is the bottleneck and selection comparatively cheap. If that assumption reverses, the constraint moves downstream, and the received theory may quietly be describing a world that no longer exists.",
+  "signature": "A system generates candidates at near-zero cost while the stage that evaluates them has fixed and costly capacity, so throughput is set downstream and excess generation degrades rather than improves the outcome.",
+  "signatureNote": "The final clause matters. If excess generation were merely wasteful the answer would be trivial; claiming it actively degrades outcomes is something that could turn out to be false.",
+  "candidates": [
+   [
+    70,
+    "Tremble dance",
+    "Foragers signal that processing capacity is saturated, throttling further recruitment",
+    "rare",
+    "chosen"
+   ],
+   [
+    26,
+    "Error catastrophe threshold",
+    "Above a critical variation rate a population loses its information and collapses",
+    "moderate",
+    ""
+   ],
+   [
+    253,
+    "Thymic negative selection",
+    "Immature cells that fail a test are destroyed before ever being deployed",
+    "rare",
+    ""
+   ],
+   [
+    69,
+    "Honeybee nest-site quorum",
+    "Scouts cross-inspect rivals' finds and commit only at a quorum",
+    "moderate",
+    ""
+   ],
+   [
+    251,
+    "Clonal selection",
+    "Cells matching a threat are amplified while the rest stay dormant",
+    "moderate",
+    "set aside"
+   ]
+  ],
+  "chosenWhy": "It is the only candidate in which the constraint communicates backwards. The others describe selection pressure; this one describes a saturated downstream stage suppressing its own inflow, which is the inversion the question is about.",
+  "intake": [
+   [
+    "actors",
+    "Forager bees returning with nectar; receiver bees who unload it",
+    "stated"
+   ],
+   [
+    "resources",
+    "Nectar; receiver time; collective attention to recruitment",
+    "stated"
+   ],
+   [
+    "triggers",
+    "Unloading delay experienced directly by the returning forager",
+    "stated"
+   ],
+   [
+    "timing",
+    "Within a bout; the signal acts on recruitment in minutes",
+    "inferred"
+   ],
+   [
+    "costs",
+    "Foraging effort already spent on a load that cannot be processed",
+    "inferred"
+   ],
+   [
+    "outcomes",
+    "Recruitment is suppressed; inflow falls toward processing capacity",
+    "stated"
+   ],
+   [
+    "constraints",
+    "Whether the signal is ever ignored, and what sets receiver capacity",
+    "unknown"
+   ]
+  ],
+  "unknownNote": "A mechanism assuming the signal is always obeyed would rest on an invention, and every proposition built on it would inherit the error without anything downstream re-examining the source.",
+  "mechanisms": [
+   [
+    "M1",
+    "A forager experiences unloading delay first-hand and converts that private experience into a public signal suppressing recruitment",
+    "carried"
+   ],
+   [
+    "M2",
+    "Queue length is locally observable at the handoff, so capacity information exists at the interface and needs no central measurement",
+    "carried"
+   ],
+   [
+    "M3",
+    "Foragers reduce effort when unloading is slow",
+    "near-duplicate of M1"
+   ]
+  ],
+  "abstractions": [
+   [
+    "M1",
+    "An agent who experiences a downstream delay first-hand emits a signal suppressing upstream generation, with no party measuring total throughput",
+    "sufficient",
+    "The causal work is private delay becoming public information"
+   ],
+   [
+    "M2",
+    "Queue length at a handoff is locally observable, so capacity information sits at the interface rather than in a central record",
+    "sufficient",
+    "The claim is about where information lives"
+   ],
+   [
+    "M3",
+    "Opposing signals equilibrate inflow to capacity",
+    "thin",
+    "A generic feedback loop once the biology is removed"
+   ]
+  ],
+  "mapping": [
+   [
+    "Settings",
+    "Any organization where ideas are generated and evaluated by different people"
+   ],
+   [
+    "Antecedents",
+    "Evaluators experience the backlog directly; a channel exists to signal it; generators respond"
+   ],
+   [
+    "Outcomes",
+    "Generation tracks evaluative capacity; backlog stays bounded; attention per candidate is preserved"
+   ],
+   [
+    "Boundary",
+    "Fails where evaluators are insulated from the backlog, or signalling overload is career-costly"
+   ],
+   [
+    "Satisfiable",
+    "Partly — the channel usually exists, but the signal is rarely costless to send"
+   ]
+  ],
+  "props": [
+   [
+    "C1",
+    "mechanistic",
+    "Organizations in which evaluators can suppress upstream generation through a low-cost, locally triggered signal will sustain higher quality of evaluation per candidate than those setting generation rate by policy."
+   ],
+   [
+    "C2",
+    "mechanistic",
+    "Where the cost of signalling saturation falls on the evaluator, backlogs will grow past the point at which evaluation quality degrades, because the signal is suppressed before the queue is."
+   ],
+   [
+    "C3",
+    "relational",
+    "Firms adopting generative tools will see the bottleneck shift from generation to selection."
+   ],
+   [
+    "C4",
+    "analogical",
+    "Organizations, like hives, must balance the inflow and outflow of work."
+   ]
+  ],
+  "verdicts": [
+   [
+    "C1",
+    "pass",
+    null,
+    "Names an observable signalling channel and predicts a difference between two identifiable designs",
+    [
+     4,
+     4,
+     4,
+     4,
+     5
+    ]
+   ],
+   [
+    "C2",
+    "pass",
+    null,
+    "The claim that the signal is suppressed before the queue makes a specific prediction about sequence",
+    [
+     5,
+     3,
+     5,
+     4,
+     5
+    ]
+   ],
+   [
+    "C3",
+    "reject",
+    "novelty",
+    "Restates the question's own premise. Bottleneck migration is the starting observation, not a finding",
+    [
+     4,
+     4,
+     1,
+     null,
+     null
+    ]
+   ],
+   [
+    "C4",
+    "reject",
+    "abstraction",
+    "'Balance' does all the work. No mechanism, and nothing would count against it",
+    [
+     1,
+     null,
+     null,
+     null,
+     null
+    ]
+   ]
+  ],
+  "survivor": "C2",
+  "falsification": "Follow a review pipeline through rising submission volume. If evaluators voice saturation before backlog reaches the point where measured decision quality declines, the proposition fails — it predicts the reverse order.",
+  "design": "Submission and decision timestamps with an independent quality measure per decision, across a volume shift",
+  "disanalogy": "A tremble dance is credible because delay physically happened to the forager, and it costs nothing to perform. An evaluator reporting overload may be disbelieved, and reporting it can carry a career cost. The disanalogy locates the organizational problem exactly: the mechanism needs a saturation signal that is both automatic and cheap to send, which is a design requirement rather than an assumption about behaviour.",
+  "verify": "Whether the tremble dance suppresses recruitment rather than redirecting it, and what sets receiver capacity"
+ }
+]

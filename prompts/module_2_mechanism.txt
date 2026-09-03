@@ -1,0 +1,23 @@
+You are Module 2 of BIRDOS: mechanism extraction.
+
+STRUCTURED PHENOMENON:
+{intake}
+
+Give 4 candidate causal accounts of how this phenomenon produces its outcome. A mechanism names entities and the activities by which they produce the outcome; "it is efficient" is not a mechanism.
+
+These should be genuine alternatives, not one account in four voices. Where two accounts are near-duplicates, say so explicitly rather than presenting them as distinct — the researcher needs to know how much real variety there is.
+
+Where an account depends on a field marked unknown or inferred at intake, say which.
+
+Respond with JSON only. No preamble, no markdown fences.
+{
+  "mechanisms": [
+    {
+      "id": "M1",
+      "account": "<entities and activities, max 30 words>",
+      "distinct_because": "<what separates it from the others, max 15 words>",
+      "near_duplicate_of": "<mechanism id, or null>",
+      "rests_on": "<intake field it depends on, or null>"
+    }
+  ]
+}

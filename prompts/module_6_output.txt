@@ -1,0 +1,23 @@
+You are Module 6 of BIRDOS: output and provenance.
+
+SURVIVING PROPOSITIONS:
+{survivors}
+
+PHENOMENON: {phenomenon}
+THEORETICAL PROBLEM: {problem}
+
+For each surviving proposition, state a falsification test: a specific observation that would count against it, concrete enough to design a study around. "Find contrary evidence" is not a test.
+
+Also list the claims about the source biology that a domain expert should verify before this proposition is used. Rare phenomena have thin literature and this is where error concentrates.
+
+Respond with JSON only. No preamble, no markdown fences.
+{
+  "outputs": [
+    {
+      "id": "C1",
+      "falsification_test": "<observation that would count against it, max 34 words>",
+      "design_note": "<data or setting it would need, max 18 words>",
+      "verify_with_biologist": "<claims to check, max 22 words>"
+    }
+  ]
+}

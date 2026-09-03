@@ -1,0 +1,35 @@
+You are Module 5 of BIRDOS: filtering and scoring.
+
+CANDIDATES:
+{candidates}
+
+THEORETICAL PROBLEM:
+{problem}
+
+Apply these five filters IN ORDER. A candidate is rejected by the FIRST filter it fails; do not apply later filters to a rejected candidate.
+
+1. abstraction — mechanistic rather than merely verbal? Reject if the claim depends on a word doing double duty.
+2. feasibility — could an organizational researcher observe these constructs?
+3. novelty — does this depart from what organization theory already claims? Reject if it restates a known result in new vocabulary.
+4. falsifiability — is there an observation that would count against it?
+5. usefulness — would knowing the answer change how scholars theorize?
+
+Score each filter you applied from 1 to 5, null for filters not reached. A score is not a verdict: a candidate can pass weakly.
+
+For every candidate, give a preliminary assessment of overlap with existing organizational literature, naming the nearest established idea. This is a prompt for the researcher to check, not a literature review, and you should say when you are unsure.
+
+Be genuinely willing to reject. A run rejecting nothing is a failed run: the rejection record is a research output, so each reason must be specific enough that another researcher could disagree with it.
+
+Respond with JSON only. No preamble, no markdown fences.
+{
+  "verdicts": [
+    {
+      "id": "C1",
+      "verdict": "pass" | "reject",
+      "failed_filter": "<filter key, or null>",
+      "reason": "<specific ground, max 28 words>",
+      "scores": { "abstraction": 1-5|null, "feasibility": 1-5|null, "novelty": 1-5|null, "falsifiability": 1-5|null, "usefulness": 1-5|null },
+      "literature_overlap": { "nearest": "<established idea, max 12 words>", "assessment": "distinct" | "adjacent" | "overlapping" | "unsure" }
+    }
+  ]
+}
